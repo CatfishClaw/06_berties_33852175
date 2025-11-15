@@ -1,3 +1,7 @@
+# Create the application user
+CREATE USER IF NOT EXISTS 'berties_books_app'@'localhost' IDENTIFIED BY 'qwertyuiop'; 
+GRANT ALL PRIVILEGES ON berties_books.* TO ' berties_books_app'@'localhost';
+
 # Create database script for Berties books
 
 # Create the database
@@ -11,6 +15,3 @@ CREATE TABLE IF NOT EXISTS books (
     price  DECIMAL(5, 2),
     PRIMARY KEY(id));
 
-# Create the application user
-CREATE USER IF NOT EXISTS 'berties_books_app'@'localhost' IDENTIFIED BY 'qwertyuiop'; 
-GRANT ALL PRIVILEGES ON berties_books.* TO ' berties_books_app'@'localhost';

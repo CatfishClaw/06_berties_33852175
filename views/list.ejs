@@ -7,9 +7,9 @@
   <body>
     <h1>Books Available</h1>
     <ul>
-        <%= for (let {id, name, price} of availableBooks){
+        <% for (let {id, name, price} of availableBooks){ %>
             <li><%= id %>,<%= name %>, <%= price %></li>
-    } %>
+    <%} %>
 </ul>
 </body>
 </html>

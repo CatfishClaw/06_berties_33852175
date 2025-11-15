@@ -6,10 +6,10 @@
   </head>
   <body>
     <h1>Books Available</h1>
-    <li>
+    <ul>
         <%= for (let {id, name, price} of availableBooks){
-            <ul><%= id %>,<%= name %>, <%= price %></ul>
+            <li><%= id %>,<%= name %>, <%= price %></li>
     } %>
-    </li>
+</ul>
 </body>
 </html>

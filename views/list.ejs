@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+  <head>
+    <title>List <%=shopData.shopName%></title>
+    <link rel="stylesheet"  type="text/css" href="/main.css" />
+  </head>
+  <body>
+    <h1>Books Available</h1>
+    <% for (let {id, name, price} of availableBooks){%>
+        <ul><%= id %>,<%= name %>, <%= price %></ul>
+   <%} %>
+  </body>
+</html>

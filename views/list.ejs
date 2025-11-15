@@ -6,8 +6,10 @@
   </head>
   <body>
     <h1>Books Available</h1>
-    <% for (let {id, name, price} of availableBooks){%>
-        <ul><%= id %>,<%= name %>, <%= price %></ul>
-   <%} %>
-  </body>
+    <li>
+        <%= for (let {id, name, price} of availableBooks){
+            <ul><%= id %>,<%= name %>, <%= price %></ul>
+    } %>
+    </li>
+</body>
 </html>

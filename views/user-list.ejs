@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+  <head>
+    <title>List <%=shopData.shopName%></title>
+    <link rel="stylesheet"  type="text/css" href="/main.css" />
+  </head>
+  <body>
+    <h1>Registered Users</h1>
+    <ul>
+        <% for (let {username, email, hashedPassword} of registeredUsers){ %>
+            <li><%= username %>,<%= email %>,<%= hashedPassword %></li>
+    <%} %>
+</ul>
+</body>
+</html>
